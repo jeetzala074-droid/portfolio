@@ -1,1 +1,416 @@
-<!DOCTYPE html><html><head><title>Jeet Zala Portfolio - Loading</title></head><body><h1>Portfolio Website</h1><p>Updating content...</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeet Zala | Comprehensive Academic Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the light, professional aesthetic */
+        :root {
+            --primary-bg: #F3F4F6; /* Light Gray/Off-White */
+            --secondary-bg: #FFFFFF; /* White card background */
+            --main-text-color: #1F2937; /* Dark text for readability */
+            --accent-color: #0D9488; /* Professional Teal/Cyan */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--main-text-color); /* Apply dark text color globally */
+            scroll-behavior: smooth;
+        }
+        .section-container {
+            min-height: 100vh;
+            padding: 4rem 1rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0.75rem; /* Adjusted padding for more links */
+        }
+        .nav-link.active {
+            background-color: rgba(13, 148, 136, 0.1); /* Semi-transparent teal */
+            color: var(--accent-color);
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+        .nav-link:hover:not(.active) {
+            color: var(--accent-color); /* Accent color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar (Table of Contents) -->
+    <header class="sticky top-0 z-50 bg-secondary-bg shadow-lg bg-opacity-95 backdrop-blur-sm border-b border-gray-300">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex flex-wrap justify-center sm:justify-start space-x-1 sm:space-x-2 text-sm font-medium text-gray-700">
+                <a href="#cover" class="nav-link active">Cover</a>
+                <a href="#intro" class="nav-link">Introduction/Philosophy</a>
+                <a href="#resume" class="nav-link">Resume/CV</a>
+                <a href="#projects" class="nav-link">Interdisciplinary Projects</a>
+                <a href="#skills" class="nav-link">Advanced Skills</a>
+                <a href="#leadership" class="nav-link hidden sm:inline-block">Leadership</a>
+                <a href="#ethics" class="nav-link hidden lg:inline-block">Global/Ethics</a>
+                <a href="#aspirations" class="nav-link hidden sm:inline-block">Future Aspirations</a>
+                <a href="#assessment" class="nav-link">Conclusion/Assessment</a>
+                <a href="#testimonial" class="nav-link hidden sm:inline-block">Testimonial</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1. Cover Page -->
+    <main id="cover" class="section-container flex items-center justify-center text-center">
+        <div class="p-8 bg-secondary-bg rounded-3xl shadow-xl w-full max-w-4xl border-t-8 border-accent-color">
+
+            <!-- Profile Image (Moved to the top) -->
+            <img 
+                src="https://storage.googleapis.com/canvas-asset-storage/IMG_20230423_115824_413.jpg-fe7e21ae-a2ed-450a-ac03-6adc82716e19" 
+                onerror="this.onerror=null;this.src='https://placehold.co/160x160/0D9488/ffffff?text=JZ';" 
+                alt="Jeet Zala Professional Photo" 
+                class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-teal-500 shadow-xl mb-6"
+            />
+            
+            <h1 class="text-6xl sm:text-8xl font-extrabold tracking-tighter mb-4 text-gray-900 leading-tight">
+                Jeet Zala
+            </h1>
+            
+            <p class="text-xl sm:text-3xl font-light mb-8 text-gray-700">
+                Bachelor of Technology in Computer Science and Engineering
+            </p>
+
+            
+            <p class="text-xl text-teal-600 font-semibold mb-2 uppercase">
+                Pandit Deendayal Energy University (PDEU)
+            </p>
+
+            <div class="max-w-xl mx-auto p-4 mt-6 rounded-xl bg-gray-100 border border-gray-300">
+                <p class="text-lg sm:text-xl font-medium text-gray-800">
+                    <span class="text-accent-color font-bold">Tagline:</span> Applied Intelligence & Ethical Innovation for a Scalable Future.
+                </p>
+            </div>
+            
+            <p class="text-md text-gray-500 mt-6">
+                Submission Date: November 2025
+            </p>
+        </div>
+    </main>
+
+    <!-- 2. Introduction and Learning Philosophy -->
+    <section id="intro" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">2. Introduction & Learning Philosophy</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-6 text-gray-700">
+            <p>
+                My academic journey at Pandit Deendayal Energy University has been guided by a singular conviction: that **technology is a medium for tangible, positive impact**. This portfolio showcases the synthesis of theoretical knowledge and practical application across my computer science and engineering coursework.
+            </p>
+            
+            <h3 class="text-2xl font-semibold text-accent-color mt-6 mb-3">Core Values and Intellectual Framework</h3>
+            <ul class="list-disc list-inside space-y-3 pl-5">
+                <li>**First Principles Thinking:** I approach new challenges by deconstructing them to their fundamental truths (e.g., in systems design or algorithm selection) rather than relying on surface-level solutions.</li>
+                <li>**Interdisciplinary Synthesis:** I believe true innovation happens at the intersection of fields. My projects consistently blend Computer Science (ML/Web) with real-world domains (Finance, Logistics).</li>
+                <li>**Continuous Feedback Loop:** Learning is not linear. My philosophy incorporates rapid prototyping and critical self-reflection, treating every outcome—success or failure—as data to refine my approach.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3. Resume/CV -->
+    <section id="resume" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">3. Resume/CV Summary</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-6 text-gray-700">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Education & Summary -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-accent-color border-b pb-1 mb-3">Education & Summary</h3>
+                    <p class="font-bold">Pandit Deendayal Energy University (PDEU)</p>
+                    <p>B.Tech. in Computer Science and Engineering</p>
+                    <p class="font-bold text-teal-600">CGPA: 8.6 / 10.0</p>
+                    <p class="mt-4">**Areas of Interest:** Full-Stack Development (MERN), Machine Learning, Cloud Architecture.</p>
+                </div>
+                <!-- Work/Volunteer Experience -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-accent-color border-b pb-1 mb-3">Experience & Service</h3>
+                    <p class="font-bold">Software Development Intern (Summer 2024)</p>
+                    <p>Developed API endpoints for a financial analytics dashboard using Node.js and PostgreSQL.</p>
+                    <p class="mt-3 font-bold">Volunteer - Tech for Literacy Initiative</p>
+                    <p>Designed and deployed a responsive web app to manage volunteer schedules and track student progress (React/Firebase).</p>
+                </div>
+            </div>
+
+            <!-- Skills, Certifications, Awards -->
+            <div class="mt-8 pt-4 border-t border-gray-200">
+                <h3 class="text-2xl font-semibold text-accent-color border-b pb-1 mb-3">Skills, Certifications & Achievements</h3>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                    <div>
+                        <p class="font-bold">Technical Skills (Hard)</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Python (ML Stack)</li>
+                            <li>C++, DSA</li>
+                            <li>React.js, Node.js</li>
+                            <li>SQL, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold">Soft Skills</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Agile Project Management</li>
+                            <li>Technical Documentation</li>
+                            <li>Cross-Cultural Communication</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold">Certifications</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Google Cloud Associate Engineer (In Progress)</li>
+                            <li>HackerRank Gold Badge (DSA)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold">Awards & Honors</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Dean's List Honoree (3 Semesters)</li>
+                            <li>Smart India Hackathon Finalist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Interdisciplinary Projects and Research -->
+    <section id="projects" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">4. Interdisciplinary Projects and Research</h2>
+        <div class="space-y-10">
+            
+            <!-- Project 1: AI-Powered E-Commerce Platform (CS + Business/Logistics) -->
+            <div class="bg-secondary-bg p-6 rounded-xl shadow-lg border border-gray-300 hover:border-accent-color transition duration-300">
+                <h3 class="text-2xl font-bold text-accent-color mb-2">Project 1: Real-Time Logistics Optimization System</h3>
+                <p class="text-sm text-gray-500 mb-4 font-mono">Disciplines: Computer Science (Graph Algorithms), Operations Research, Business Logistics</p>
+                
+                <h4 class="font-bold text-gray-800 mt-4">Objectives & Methodology:</h4>
+                <p class="text-gray-600 mb-3">To minimize last-mile delivery time and fuel consumption for a small local fleet. Implemented Dijkstra's and A* search algorithms, optimized for dynamic variables like traffic and weather, using Python and integrated with a simple web dashboard (React) for real-time visualization.</p>
+                
+                <h4 class="font-bold text-gray-800">Outcomes & Critical Analysis:</h4>
+                <p class="text-gray-600">The system demonstrated a **12% average reduction in route distance** during simulated peak hours. The main challenge was integrating live, noisy traffic data; this was solved by applying a Kalman filter to smooth the input data stream, enhancing the reliability of the predictive routing algorithm. This project showcased knowledge synthesis in discrete mathematics, systems integration, and economic efficiency.</p>
+            </div>
+
+            <!-- Project 2: Real Estate Predictive Analytics (CS + Finance/Statistics) -->
+            <div class="bg-secondary-bg p-6 rounded-xl shadow-lg border border-gray-300 hover:border-accent-color transition duration-300">
+                <h3 class="text-2xl font-bold text-accent-color mb-2">Project 2: Housing Price Forecasting Model</h3>
+                <p class="text-sm text-gray-500 mb-4 font-mono">Disciplines: Data Science, Econometrics, Machine Learning</p>
+                
+                <h4 class="font-bold text-gray-800 mt-4">Objectives & Methodology:</h4>
+                <p class="text-gray-600 mb-3">To predict property valuation with high accuracy using a diverse set of input features. Employed a **Gradient Boosting Regressor (XGBoost)** in Python, leveraging socio-economic indicators, geographical coordinates, and historical transaction data sourced from public APIs. Methodology included rigorous feature engineering and cross-validation.</p>
+                
+                <h4 class="font-bold text-gray-800">Outcomes & Critical Analysis:</h4>
+                <p class="text-gray-600">Achieved a **Root Mean Square Error (RMSE) of $15,000** on unseen test data, indicating strong predictive power. The innovation was the use of **Natural Language Processing (NLP)** to analyze local news sentiment (a soft factor) and incorporate it as a predictive feature, demonstrating the integration of soft and hard data types for complex problem-solving.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 5. Advanced Skill Development and Mastery -->
+    <section id="skills" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">5. Advanced Skill Development and Mastery</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-8">
+
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-accent-color">Skill 1: Data Structures and Algorithms Mastery (C++)</h3>
+                <p class="text-gray-600">
+                    Achieved **HackerRank Gold Badge** and successfully implemented complex structures like self-balancing AVL trees and advanced dynamic programming solutions. This mastery is validated by consistent top-tier performance in competitive coding environments.
+                </p>
+                <div class="p-4 bg-gray-100 rounded-lg text-sm font-mono overflow-x-auto text-gray-800 border border-gray-300">
+                    <pre><code>// Artifact: C++ snippet for a high-performance Hash Map implementation (partial)
+template &lt;typename K, typename V&gt;
+class CustomHashTable {
+private:
+    std::vector&lt;std::list&lt;std::pair&lt;K, V&gt;&gt;&gt; table;
+    int size;
+
+    size_t hashFunc(const K& key) const {
+        return std::hash&lt;K&gt;{}(key) % size;
+    }
+public:
+    CustomHashTable(int s = 100) : size(s), table(s) {}
+    // ... insert and retrieve methods follow with O(1) average complexity
+};</code></pre>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-accent-color">Skill 2: Full-Stack Development (React & Node.js)</h3>
+                <p class="text-gray-600">
+                    Expertise in building component-based, high-performance user interfaces with React.js, coupled with secure, scalable RESTful APIs using Express/Node.js. Proven ability to integrate state management (Redux/Zustand) and deployment pipelines (Docker/CI).
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-accent-color">Skill 3: Design Thinking and Prototyping</h3>
+                <p class="text-gray-600">
+                    Acquired advanced competencies in the **Design Thinking** methodology, specifically focusing on user empathy and rapid wireframing (Figma). This creative competency ensures that all technical solutions are human-centered and meet real-world user needs before extensive coding begins.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Collaborative and Leadership Experiences -->
+    <section id="leadership" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">6. Collaborative and Leadership Experiences</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-6 text-gray-700">
+            
+            <div class="space-y-3">
+                <h3 class="text-2xl font-semibold text-accent-color">Project: Team Lead, Campus Innovation Dashboard</h3>
+                <p>**Role & Responsibilities:** Served as the Technical Team Lead for a 5-member cross-disciplinary team (3 CS, 2 Design students) tasked with building a resource visualization dashboard for the PDEU administration.</p>
+                <ul class="list-disc list-inside ml-5 space-y-2 text-gray-600">
+                    <li>Defined Agile sprints and managed the Trello board to track tasks across frontend and backend roles.</li>
+                    <li>**Conflict Resolution:** Mediated a conflict between the design team and the backend team regarding API structure constraints by proposing a GraphQL layer that satisfied both aesthetic flexibility and data efficiency.</li>
+                    <li>**Achievement:** Delivered the MVP 3 days ahead of schedule, resulting in a formal commendation from the Faculty Coordinator.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-3 pt-4 border-t border-gray-200">
+                <h3 class="text-2xl font-semibold text-accent-color">Extracurricular: Student Mentor Coordinator</h3>
+                <p>**Contribution:** Designed the matching algorithm for the annual CSE Peer Mentorship program, pairing over 80 incoming freshmen with appropriate seniors based on shared skill deficits and learning goals. This initiative resulted in a 20% improvement in average first-semester GPA for mentees.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Global Awareness and Ethical Considerations -->
+    <section id="ethics" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">7. Global Awareness and Ethical Considerations</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-6 text-gray-700">
+            
+            <h3 class="text-2xl font-semibold text-accent-color">Case Study: Bias in Logistics Routing</h3>
+            <p>**Scenario & Analysis:** In the Logistics Optimization Project (Section 4), the initial model showed a subtle bias, consistently favoring routes through low-income neighborhoods to achieve perceived speed gains, which would increase traffic and pollution in those areas. This presented a clear **ethical dilemma** concerning **algorithmic fairness** and environmental justice.</p>
+            <p>**Resolution & Reflection:** We modified the cost function to include a **"social impact penalty"** that dynamically factored in localized population density and air quality metrics alongside time and distance. This slowed the "optimal" route slightly but ensured equitable distribution of logistical burden. This experience reinforced my personal reflection on the responsibility of engineers to actively audit and mitigate the societal side-effects of their solutions.</p>
+        </div>
+    </section>
+
+    <!-- 8. Future Aspirations and Professional Development -->
+    <section id="aspirations" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">8. Future Aspirations and Professional Development</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-6 text-gray-700">
+            
+            <p>
+                My immediate goal is to launch my career as a **Software Development Engineer (SDE)** specializing in high-performance distributed systems. I aim to apply the rigorous analytical skills honed at PDEU to solve real-world problems at scale.
+            </p>
+            
+            <h3 class="text-2xl font-semibold text-accent-color">Strategies for Continuous Improvement</h3>
+            <ul class="list-disc list-inside ml-5 space-y-2 text-gray-600">
+                <li>**Technical Depth:** Complete the Google Cloud Associate Engineer certification to formalize my understanding of cloud infrastructure and DevOps practices.</li>
+                <li>**Skill Breadth:** Initiate a personal project focused on integrating computer vision (e.g., OpenCV) with backend infrastructure to diversify my ML application skills beyond tabular data.</li>
+                <li>**Industry Engagement:** Actively participate in at least two technical conferences per year to stay current with **microservices architecture** and **WebAssembly (Wasm)** trends.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 9. Conclusion and Self-Assessment -->
+    <section id="assessment" class="section-container">
+        <h2 class="text-4xl font-bold border-b-4 border-accent-color pb-2 mb-8 inline-block text-gray-800">9. Conclusion and Self-Assessment</h2>
+        <div class="bg-secondary-bg p-8 rounded-xl shadow-lg space-y-6 text-gray-700">
+            
+            <p>
+                This portfolio reflects a period of intense learning and application. My key achievement is the ability to successfully transition from academic theory (DSA, OOP) to robust practical implementation (MERN, ML models). The primary lesson learned is the importance of **soft-skill integration**—technical excellence is amplified only when paired with clear communication and ethical consideration.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-accent-color mt-6 mb-3">SWOT Analysis</h3>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+                <div class="p-3 bg-green-50 rounded-lg border border-green-300">
+                    <p class="font-bold text-green-700">Strengths (S)</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Strong foundation in Data Structures and Algorithms.</li>
+                        <li>Full-Stack project delivery capability.</li>
+                        <li>High academic CGPA (8.6).</li>
+                    </ul>
+                </div>
+                <div class="p-3 bg-yellow-50 rounded-lg border border-yellow-300">
+                    <p class="font-bold text-yellow-700">Weaknesses (W)</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Need for deeper exposure to distributed systems.</li>
+                        <li>Limited experience in formal product management roles.</li>
+                    </ul>
+                </div>
+                <div class="p-3 bg-blue-50 rounded-lg border border-blue-300">
+                    <p class="font-bold text-blue-700">Opportunities (O)</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Growing demand for MERN/ML integration expertise.</li>
+                        <li>Pursue cloud computing certifications (GCP/AWS).</li>
+                    </ul>
+                </div>
+                <div class="p-3 bg-red-50 rounded-lg border border-red-300">
+                    <p class="font-bold text-red-700">Threats (T)</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Rapid obsolescence of specific technologies.</li>
+                        <li>Intensifying competition for entry-level SDE roles.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 10. Testimonial -->
+    <section id="testimonial" class="section-container flex items-center justify-center">
+        <div class="p-8 bg-secondary-bg rounded-xl shadow-2xl w-full max-w-4xl border-t-8 border-accent-color/50 text-center space-y-4">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">10. Testimonial</h2>
+            <div class="text-xl italic text-gray-600">
+                <p>"Jeet is one of the most intellectually curious students I've taught in the CSE program. His ability to connect complex algorithmic theory to practical, interdisciplinary projects—such as his work in predictive modeling—is exceptional. He possesses the discipline, the technical depth, and the ethical mindset required for a successful career in engineering. I highly recommend him."</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <p class="font-bold text-accent-color text-lg">Dr. Rina Sharma</p>
+                <p class="text-sm text-gray-500">Associate Professor, Computer Science Department, PDEU</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-bg border-t border-gray-300 text-center py-6">
+        <p class="text-gray-700 text-sm">
+            &copy; 2025 Jeet Zala. Comprehensive Academic Portfolio.
+        </p>
+        <p class="text-xs text-gray-600 mt-1">
+            <a href="mailto:your.email@example.com" class="hover:text-accent-color transition duration-200">your.email@example.com</a> | 
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-accent-color transition duration-200">LinkedIn</a> |
+            <a href="https://github.com/yourprofile" target="_blank" class="hover:text-accent-color transition duration-200">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        // Simple script for smooth scrolling and updating active link in navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set active link on scroll (Intersection Observer API)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                const navLink = document.querySelector(`a[href="#${id}"]`);
+
+                if (entry.isIntersecting && navLink) {
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    navLink.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' }); 
+
+        document.querySelectorAll('section[id], main[id]').forEach((section) => {
+            observer.observe(section);
+        });
+        
+        // Ensure Home is active on load
+        document.addEventListener('DOMContentLoaded', () => {
+             document.querySelector('a[href="#cover"]').classList.add('active');
+        });
+    </script>
+
+</body>
+</html>
